@@ -1,0 +1,117 @@
+.detail {
+    flex: 1;
+    overflow-x: hidden;
+   
+    .user{
+        padding: 25px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 1px solid #dddddd35;
+        font-size: 12px;
+
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        
+
+        }
+        
+    }
+
+    .info{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        overflow-y: scroll;
+        font-size: 14px;
+        
+
+        .option{
+            
+            
+
+            .title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                img{
+                    width: 30px;
+                    height: 30px;
+                    background-color: rgba(21, 4, 42, 0.904);
+                    padding: 10px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+            }
+
+            .photos{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                
+
+                .photoItem{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+    
+
+                    .photoDetail{
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 5px;
+                            object-fit: cover;
+                        }
+
+                        span{
+                            font-size: 14px;
+                            color: lightgray;
+                            font-weight: 300;
+                        }
+                    }
+
+                    .icon{
+                        width: 30px;
+                        height: 30px;
+                        background-color: rgba(21, 4, 42, 0.904);
+                        padding: 10px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                }
+
+              
+            }  
+            
+           
+        } 
+        
+        button{
+                    padding: 12px;
+                    background-color: #e86060;
+                    color: rgb(255, 255, 255);
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: #bb0a0a;
+                    }
+
+                    &.logout{
+                        padding: 10px;background-color: #3375ca;
+                    }
+                
+        }
+    }
+}
